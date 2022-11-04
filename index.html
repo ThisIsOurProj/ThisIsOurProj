@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title> Stoned faces IPBA</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<head>
+
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+</head>
+<style>
+
+.dropbtn {
+  background-color: #54ab58;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+
+  text-decoration: blink;
+border-radius: 50px;
+}
+
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+    background-color :#d7ebfc ;
+    co
+
+}
+
+.dropdown-content a:hover {background-color: #d4ddff;
+
+
+
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #46874a;}
+
+
+li,a {
+
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.top {
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding-left: 75px;
+  padding-right: 105px;
+  position: fixed;
+  top: 0;
+  width: 88.8%;
+  background-color: black;
+  z-index: 9999;
+
+
+}
+
+.logo {
+
+
+  cursor: pointer;
+  margin-right: auto;
+  width: 150px;
+}
+
+.navlinks {
+
+  
+
+}
+
+.navlinks li {
+
+  margin: 20px;
+  display: inline-block;
+  padding: 0px 5px;
+
+}
+
+
+.navlinks a { 
+
+transition: all 0.4s ease 0s;
+ color: white;
+ margin: 20px;
+  display: inline-block;
+  padding: 0px 10px;
+
+
+}
+
+
+.navlinks li a:hover { 
+
+
+color: deeppink;
+
+} 
+.navlinks li a:hover:after{
+
+  content: "";
+  position: absolute;
+  background-color: whitesmoke;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+
+}
+
+.intro1 {
+
+padding-top: 95px;
+
+
+}
+
+
+.yct {
+
+  background-color: #54ab58;
+  color: white;
+  padding: 20px;
+ font-family: 'arial';
+
+
+}
+
+body{
+
+background: black ;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.container {
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/1c/e8/19/1ce819a2951c63dd7659734a80020f90.png);
+  background-size: contain; 
+  background : height ;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 0px;
+
+
+  
+
+}
+
+.container2 {
+
+  width: 100%;
+  height: 100vh;
+ background-image: url(https://i.pinimg.com/originals/1c/e8/19/1ce819a2951c63dd7659734a80020f90.png);
+  background-size: contain; 
+  background : height ;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  
+
+}
+
+.container3 {
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/1c/e8/19/1ce819a2951c63dd7659734a80020f90.png);
+  background-size: contain; 
+  background : height ;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  
+
+}
+
+
+.swiper {
+
+
+  width: 77%;
+  height: 80%;
+   box-shadow: 0px 8px 16px 0px rgba(7,7,7,7.7);
+  
+  
+}
+
+.swiper-slide img {
+
+  width: 100%;
+}
+
+ #more {display: none;}
+ #more2 {display: none;}
+ #more3 {display: none;}
+
+
+
+ .categories{
+
+  display: flex;
+  background-image: url(https://i.ytimg.com/vi/DyARxglgEn8/maxresdefault.jpg);
+  margin: 20px;
+
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  
+  
+  
+ }
+
+ .categories > div {
+background-color:transparent;
+align-items: center;
+justify-content: center;
+margin: 20px;
+width: 100%;
+border-radius: 5px;
+box-shadow: 0px 8px 16px 0px rgba(6,6,6,6.6);
+font-family: 'Dancing Script', cursive;
+color: whitesmoke;
+padding-left: 20px;
+padding-bottom: 15px;
+padding: 10px;
+font-weight: bold;
+
+ 
+
+ }
+
+ 
+ }
+
+ .cat1 , .cat2 , .cat3 {
+
+
+text-align: center;
+padding: 10px;
+
+ }
+
+
+#myBtn, #myBtn2 , #myBtn3 {
+
+
+background-color:#63bf68 ;
+border-radius: 20px;
+padding: 15px;
+border-width: 1px;
+} 
+
+
+#myBtn{
+
+transition-duration: 0.4s;
+cursor: pointer;
+
+} 
+
+#myBtn2 {
+
+transition-duration: 0.4s;
+cursor: pointer;
+
+} 
+
+#myBtn3 {
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+
+#myBtn:hover , #myBtn2:hover , #myBtn3:hover {
+
+  background-color: #549e57;
+
+}
+
+.p1 {
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+ .hh {
+
+  font-family: 'arial';
+ }
+
+ #third {
+
+background-color: #c5e3c7;
+color: black;
+padding: 10px;
+margin-top: 10px;
+margin-left: 20px;
+margin-right: 20px;
+margin-bottom: 10px;
+
+ }
+
+ .thirdp {
+
+
+font-family: 'Mulish', sans-serif;
+font-size: 20px;
+ }
+
+ .thirdul {
+
+font-family: 'Dancing Script', cursive;
+
+ }
+
+.oc {
+
+   background-color: #54ab58;
+  color: white;
+ padding: 15px;
+ font-family: 'arial';
+}
+
+.final {
+
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  background-color: whitesmoke;
+
+
+
+}
+
+.aands{
+
+  display: flex;
+}
+
+
+.linki{
+
+  color: white;
+  text-decoration: underline;
+  font-family: arial;
+}
+
+
+</style>
+
+<body>
+
+  <!-- Navbar stays on top-->
+
+    <header class="top">
+    
+<img class="logo" src="logo.png" height="60px" width="90px" >
+<nav>
+  
+<ul class="navlinks">
+  
+  <a href="#first">HOME</a>
+   <a href="#about">ABOUT & SOURCES</a>
+ 
+</ul>
+
+
+
+</nav>
+
+<div class="dropdown">
+  <button class="dropbtn">CONTENTS</button>
+  <div class="dropdown-content">
+    <a href="#second">Youtube content type</a>
+    <a href="#third2">Target audience and their needs</a>
+    <a href="#fourth">Our content</a>
+    
+  </div>
+
+</div>
+  </header>
+
+<img class="intro1" id="first" src="hayst.gif" height="650px" width="1333px">
+
+
+
+<div id="second" >
+
+ 
+  
+<h1 class="yct"  style="text-align: center;"> Youtube Content Types</h1>
+
+</div>
+ 
+<div class="container"  >
+
+  
+
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="youtube.gif"></div>
+    <div class="swiper-slide"><img src="whatisyt.gif"></div>
+    <div class="swiper-slide"><img src="threecat.gif"></div>
+    <div class="swiper-slide"><img src="vlogging.gif"></div>
+    <div class="swiper-slide"><img src="informational.gif"></div>
+    <div class="swiper-slide"><img src="gaming.gif"></div>
+    ...
+  </div>
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div></div>
+
+
+
+
+  </div>
+  
+
+
+
+
+
+
+
+<div class="categories">
+
+  <div class="cat1">
+    
+   <h1 class="hh">Vlogging</h1>
+
+   <p class="p1">  <span id="dots">...</span> <span id="more">
+
+    Vlog posts consist of creating a video of yourself where you talk
+    on a particular subject such as reporting or reviewing a product or an event.
+    it can even serve as a way to share your atistic process or provide a tutorial 
+    guide on a creative practice or topic </span></p>
+
+    <button onclick="myFunction()" id="myBtn">READ MORE</button>
+
+  
+
+</div>
+
+
+
+
+<div class="cat2">
+  
+<h1 class="hh" >Informational video</h1>
+
+<p class="p1"> <span id="dotss"> ... </span> <span id="more2">
+  When creating an informational video, a different set of techniques are used than when writing a screenplay. In informational videos, we need to address a specific issue. The usage of visuals and the placement of shots are frequently specified in video scripts. Information is frequently delivered by a narrator via voiceover, on-camera narration, or both. Two columns—one for graphics and the other for audio—are used most frequently in informational video formats. Another approach makes use of a screenplay style that has been adjusted to add a column on the right just for voice-over narration. It's also important to write well because it affects how other people will comprehend the information given.</span></p>
+
+<button onclick="button2()" id="myBtn2">READ MORE</button>
+
+
+</div>
+
+<div class="cat3">
+  
+<h1 class="hh" > Gaming video</h1>
+
+<p class="p1"> <span id="dotsss"> ... </span> <span id="more3">
+
+Gaming videos in this context are typically recordings of people actually playing or reviewing a video game. YouTube Gaming videos allow spectators to watch the game being played in real-time, unless it is recorded before it is posted, for fun or competition.  Gamers, young children, and teenagers are the main audiences for gaming videos. Games like Valorant, Roblox, Apex Legends, and others are often featured in gaming videos.</span></p>
+
+<button onclick="button3()" id="myBtn3">READ MORE</button>
+
+
+
+</div>
+   
+</div>
+
+<div class="container2" id="third2">
+
+  
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="taatn.gif"></div>
+    <div class="swiper-slide"><img src="ta.gif"></div>
+    <div class="swiper-slide"><img src="fi.gif"></div>
+    <div class="swiper-slide"><img src="fv.gif"></div>
+    <div class="swiper-slide"><img src="fg.gif"></div>
+    
+    ...
+  </div>
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div></div>
+
+
+<div id="fourth">
+
+<h1 class="oc" id="fourth" style="text-align: center;"> Our content</h1>
+
+</div>
+
+<div class="container3" id="third2">
+
+  
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="cc.gif"></div>
+    <div class="swiper-slide"><img src="gaming.gif"></div>
+     <div class="swiper-slide"><img src="fg.gif"></div>
+    ...
+  </div>
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div></div>
+
+
+<div class="final">
+  
+  <h1 class="finalh">
+
+  <li style="font-size: 25px; font-family: arial;">Final content</li>
+
+</h1>
+
+  <p style="font-size:20px;  font-family: arial;">We chose the gaming video with information since compared to the other categories, that content will be the one who piques a lot of interest based on our target audience. This category can also fill the needs of our audiences and it can be entertaining and informative at the same time. </p>
+<h1>
+  <li style="font-size: 20px; font-family: arial;">How will a gaming video help us promote our concert?</li></h1>
+
+  <p style="font-size:20px; font-family: arial;"> The gaming video will show the situation or the crisis in Sitio Bebe. It will also explain our plan for the pre-concert, concert proper, and post-concert, through the missions in the game. We chose Minecraft as the main game and among us as the sub-game. In the Minecraft part, we will show the situation of Sitio Bebe, pre-concert preparations (like gathering the needed materials), and concert proper (there will be a concert that will be held in Minecraft). After we collect funds (can be bronze, irons, gold, and netherite or other things) from the guests that will be played by us, we will move to the sub-game Among us. We will play Among us because, in the story, someone stole the funds, and the imposter in Among us will be the one who stole the funds. After we catch the thief we will have the funds back. We will then go back to Minecraft and give the donations to Sitio Bebe (we will create a Sitio Bebe place) that will show the post-concert. Lastly, we will promote and remind the people about the concert more.
+
+  </p>
+
+
+
+
+</div>
+
+
+
+  </div>
+
+
+  <div class="aands" style="color:whitesmoke;float: left; width: 500px; padding-left: 15px; padding-right: 50px; background-color: #323333;">
+
+<h1 id="about" style="font-size: 20px; font-family: arial; color: whitesmoke; background-color: #323333; padding-right: 50px;"> About & Sources</h1>
+
+    <div >
+      
+      <p style="font: 15px;font-family: arial;"> About :</p>
+
+ <p style="font-family: arial">Hello! We are group 1 Euphoria Fried Chicken (EFC). <br>
+
+ We created this website to showcase our plan for our Youtube video that will promote the concert for Sitio Bebe, for us to help them with their crisis.</p></div>
+
+
+    </div>
+
+    <div style="color: whitesmoke;background-color: #323333;padding: 17px;" >
+      
+  
+<p style="font: 20px;font-family: arial; ">Sources: </p>
+
+<a href="https://edu.gcfglobal.org/en/youtube/what-is-youtube/1/" target="_blank" class="linki">GCFGlobal</a><br>
+<a href="https://www.webwise.ie/parents/what-is-youtube/"target="_blank"class="linki"> Webwise</a><br>
+<a href="https://www.internetmatters.org/resources/online-gaming-advice/online-gaming-the-benefits/"target="_blank"class="linki">Internet matters</a><br>
+<a href="https://studioghiblimovies.com/studio-ghibli-downloads/studio-ghibli-wallpapers-and-desktop-backgrounds/"class="linki">Studio Ghibli wallpapers</a>
+
+
+
+
+    </div>
+    
+  
+
+
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+<script >
+
+  <!-- Navbar stays on top-->
+  
+const swiper = new Swiper('.swiper', {
+  
+  loop: true,
+
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable : true,
+
+  },
+
+ 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+</script>
+
+
+<script>
+  
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "READ LESS";
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+<script >
+  
+function button2() {
+
+var dots = document.getElementById("dotss");
+var moreText = document.getElementById("more2");
+var btnText = document.getElementById("myBtn2");
+
+ if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "READ LESS";
+    moreText.style.display = "inline";
+  }
+}
+
+
+</script>
+
+
+<script >
+  
+function button3() {
+
+var dots = document.getElementById("dotsss");
+var moreText = document.getElementById("more3");
+var btnText = document.getElementById("myBtn3");
+
+ if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "READ LESS";
+    moreText.style.display = "inline";
+  }
+}
+
+
+</script>
+
+
+
+
+</body>
+</html>
