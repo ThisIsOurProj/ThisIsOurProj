@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title> LIFELABS Stoned Faces </title>
+<title> LIFELABS 9 Euphoria Fried Chicken :)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
@@ -517,55 +517,56 @@ width: 100%;
 
 
 
-<div class="categories">
+  <div class="categories">
 
-  <div class="cat1">
+    <div class="cat1">
+      
+     <h1 class="hh">Vlogging</h1>
+  
+     <p class="p1">  <span id="dots">...</span> <span id="more">
+  
+      Vlog posts consist of creating a video of yourself where you talk
+      on a particular subject such as reporting or reviewing a product or an event.
+      it can even serve as a way to share your atistic process or provide a tutorial 
+      guide on a creative practice or topic </span></p>
+  
+      <button onclick="myFunction()" id="myBtn">READ MORE</button>
+  
     
-   <h1 class="hh">Vlogging</h1>
-
-   <p class="p1">  <span id="dots">...</span> <span id="more">
-
-    Vlog posts consist of creating a video of yourself where you talk
-    on a particular subject such as reporting or reviewing a product or an event.
-    it can even serve as a way to share your atistic process or provide a tutorial 
-    guide on a creative practice or topic </span></p>
-
-    <button onclick="myFunction()" id="myBtn">READ MORE</button>
-
   
-
-</div>
-
-
-
-
-<div class="cat2">
+  </div>
   
-<h1 class="hh" >Informational video</h1>
-
-<p class="p1"> <span id="dotss"> ... </span> <span id="more2">
-  When creating an informational video, a different set of techniques are used than when writing a screenplay. In informational videos, we need to address a specific issue. The usage of visuals and the placement of shots are frequently specified in video scripts. Information is frequently delivered by a narrator via voiceover, on-camera narration, or both. Two columns—one for graphics and the other for audio—are used most frequently in informational video formats. Another approach makes use of a screenplay style that has been adjusted to add a column on the right just for voice-over narration. It's also important to write well because it affects how other people will comprehend the information given.</span></p>
-
-<button onclick="button2()" id="myBtn2">READ MORE</button>
-
-
-</div>
-
-<div class="cat3">
   
-<h1 class="hh" > Gaming video</h1>
-
-<p class="p1"> <span id="dotsss"> ... </span> <span id="more3">
-
-Gaming videos in this context are typically recordings of people actually playing or reviewing a video game. YouTube Gaming videos allow spectators to watch the game being played in real-time, unless it is recorded before it is posted, for fun or competition.  Gamers, young children, and teenagers are the main audiences for gaming videos. Games like Valorant, Roblox, Apex Legends, and others are often featured in gaming videos.</span></p>
-
-<button onclick="button3()" id="myBtn3">READ MORE</button>
-
-
-
-</div>
-   
-</div>
+  
+  
+  <div class="cat2">
+    
+  <h1 class="hh" >Informational video</h1>
+  
+  <p class="p1"> <span id="dotss"> ... </span> <span id="more2">
+    When creating an informational video, a different set of techniques are used than when writing a screenplay. In informational videos, we need to address a specific issue. The usage of visuals and the placement of shots are frequently specified in video scripts. Information is frequently delivered by a narrator via voiceover, on-camera narration, or both. Two columns—one for graphics and the other for audio—are used most frequently in informational video formats. Another approach makes use of a screenplay style that has been adjusted to add a column on the right just for voice-over narration. It's also important to write well because it affects how other people will comprehend the information given.</span></p>
+  
+  <button onclick="button2()" id="myBtn2">READ MORE</button>
+  
+  
+  </div>
+  
+  <div class="cat3">
+    
+  <h1 class="hh" > Gaming video</h1>
+  
+  <p class="p1"> <span id="dotsss"> ... </span> <span id="more3">
+  
+  Gaming videos in this context are typically recordings of people actually playing or reviewing a video game. YouTube Gaming videos allow spectators to watch the game being played in real-time, unless it is recorded before it is posted, for fun or competition.  Gamers, young children, and teenagers are the main audiences for gaming videos. Games like Valorant, Roblox, Apex Legends, and others are often featured in gaming videos.</span></p>
+  
+  <button onclick="button3()" id="myBtn3">READ MORE</button>
+  
+  
+  
+  </div>
+     
+  </div>
+  
 
 <div class="container2" id="third2">
 
@@ -722,65 +723,69 @@ const swiper = new Swiper('.swiper', {
 
 <script>
   
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "READ LESS";
-    moreText.style.display = "inline";
-  }
-}
-
-</script>
-
-<script >
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
   
-function button2() {
-
-var dots = document.getElementById("dotss");
-var moreText = document.getElementById("more2");
-var btnText = document.getElementById("myBtn2");
-
- if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "READ LESS";
-    moreText.style.display = "inline";
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "READ LESS";
+      moreText.style.display = "inline";
+    }
   }
-}
-
-
-</script>
-
-
-<script >
   
-function button3() {
-
-var dots = document.getElementById("dotsss");
-var moreText = document.getElementById("more3");
-var btnText = document.getElementById("myBtn3");
-
- if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "READ LESS";
-    moreText.style.display = "inline";
+  </script>
+  
+  <script >
+    
+  function button2() {
+  
+  var dots = document.getElementById("dotss");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+  
+   if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "READ LESS";
+      moreText.style.display = "inline";
+    }
   }
-}
+  
+  
+  </script>
+  
+  
+  <script >
+    
+  function button3() {
+  
+  var dots = document.getElementById("dotsss");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+  
+   if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "READ LESS";
+      moreText.style.display = "inline";
+    }
+  }
+  
+  
+  </script>
+  
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -800,4 +805,5 @@ function myFunction() {
 
 </body>
 </html>
+
 
