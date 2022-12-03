@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body{
+
+background-color:rgb(255, 255, 255);
+margin: 0%;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 30px;
+  z-index: 9999;
+  
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#menu-nav {
+  max-width: 1333px;
+ 
+  background-color: black;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: fixed; width: 100%;
+  z-index: 1;
+}
+ 
+#navigation-bar ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navigation-bar li {
+  float: left;
+  width: 20%;
+  padding-left: 0;
+  
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+  color: #848484;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 0;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease;
+ 
+}
+#navigation-bar a:hover {
+  color: white;
+}
+#navigation-bar a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color:green;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+ 
+li {
+	list-style: none;
+}
+
+h3{
+
+  background-color: #101110;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0%;
+  text-align: center;
+  color: #c8ccc8;
+}
+
+.accordion {
+  background-color: #242424;
+  color: #c7c7c7;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.active, .accordion:hover {
+  background-color: #353434;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #d8e0d8;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+  margin-bottom: 10px;
+}
+
+.html {
+
+scroll-behavior: smooth;
+
+}
+
+.dot {
+
+
+  background-color: black;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 250px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav" >
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Quarter 1</a>
+  <a href="Q2.html">Quarter 2</a>
+  <a href="Q3.html">Quarter 3</a>
+  <a href="Q4.html">Quarter 4</a>
+  <a href="#about">About</a>
+</div>
+
+
+<div id="menu-nav"><div id="main" style="background-color: #f1f1f1; margin-left:0 ; padding-top: 25px;">
+  
+        <span style="font-size:25px;cursor:pointer; padding:10px; background-color: #f1f1f1;
+         " onclick="openNav()">&#9776; Quarters</span>
+      </div>
+  <div id="navigation-bar">
+    
+    <ul>
+      
+      <li><a href="#Home"><i class="home"></i><span>Home</span></a></li>
+      <li><a href="#name"><i class="home"></i><span>Our brand name</span></a></li>
+      <li><a href="#logo"><i class="logo"></i><span>  Logo</span></a></li>
+      <li><a href="#tagline"><i class="tagline"></i><span>Tagline</span></a></li>
+      <li><a href="#intro"><i class="Intro"></i><span>Intro Video</span></a></li>
+	 
+    </ul>
+  </div>
+  
+  </div>
+
+<div id="Home" class="tabcontent" >
+
+  
+<img id="first" src="home.jpg"  style="max-width:1333px;height:auto; margin-top: 0%; background-color: #c7c7c7;">
+ </div>
+
+<p style="background-color: white; padding: 20px;">...........................................................................G......R.........O...........U.............P...........7.............Q........U.........A.......R........T...........E............R.................2............................................................................</p>
+ 
+
+<div id="name">.</div>
+<img src="name.jpg" max-width="1333px" height="auto" style="margin-bottom: 0;">
+
+ 
+ <h3>Brand Name</h3>
+<div style="background-color:white;padding:50px;padding-top: 0%; margin-bottom:25px;">
+ <div style="color:black; text-align:center; padding-top: 50px;padding-bottom: 20px;font-family: 'Times New Roman', Times;" > Hello we are Nui Moai! </div>
+
+
+ <button class="accordion"> What is the meaning of Nui Moai??</button>
+
+ <div class="panel">
+  <p> Nui means great/big/abundant and Moai is a head statue, you might know Moai as the stoned face statue.</p>
+</div>
+
+
+<button class="accordion"> Why Nui Moai?</button>
+
+<div class="panel">
+ <p> Why not? Moai is such a cool dude, he's a head statue.</p>
+</div>
+  
+
+  <button class="accordion"> How did you come up with Nui Moai?</button>
+
+  <div class="panel">
+   <p> It's not the first 10 names that we have thought of ,
+     we discovered our brand name through a kind of a joke. We were asking for suggestion
+      for the brand name then one of our member just responded with the stoned face emoji (at first 
+    we didn't know what it's really called) so we just joked that, that emoji will be our brand name
+  then we really make our brand name that emoji , later on we researched 'what is the name of the stoned 
+emoji' then we discovered that it's called 'Moai' then one of our member added Nui to it. </p>
+  </div>
+    </div>
+
+<p style="font-weight: bold ;">.....................................................................................................................................................................................................................................................................................................................................................................................................</p>
+ 
+</div> <div id="logo">
+
+  <img src="logoed.jpg" max-width="1333px" height="auto" style="margin-bottom: 0; padding-top: 20px;">
+
+ <h3>OUR LOGO</h3>
+<div style="background-color:white;padding:20px;padding-left: 10px; display: inline-flex; ">
+ 
+  
+  
+
+<div class="slideshow-container" style="text-align: center;" >
+
+  <div class="mySlides fade">
+   
+    <img src="Nui Moai (1).gif " style="width:70%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+   
+    <img src="Nui Moai (2).gif" style="width:70%">
+   
+  </div>
+  
+  <div class="mySlides fade">
+   
+    <img src="Nui Moai (3).gif" style="width:70%">
+    
+  </div>
+  <div style="text-align:inherit; padding-bottom: 20px;">
+    <span  class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+  </div>
+  </div>
+
+ 
+
+</div>
+
+<div style="background-color: white;padding: 25px;">
+<div style="color:black;"> <button class="accordion"> Why this design?</button>
+
+  <div class="panel">
+   <p> We planned to put the Moai head there since it’s our brand name</p>
+  </div>
+
+  <div style="color:black;"> <button class="accordion"> How did we end up with this design?</button>
+
+    <div class="panel">
+     <p>We only used one big triangle for our logo,  integrated the triangle in our logo by
+       thinking of what fits the Moai, we thought that Moai is “ancienty” we thought of another
+        thing that is also “ancienty” that has like a triangle figure and we thought of the illuminati
+         and we tried to combine the both of them and it worked, so our logo is like 
+         “the illuminati of Moai”</p>
+    </div>
+
+</div>
+
+
+</div>  
+<div style="color:black;">
+<button class="accordion"> Measurements of our logo</button>
+  <div class="panel">
+
+    <div style="display:flex ; padding: 15px ;">
+<div><img src="logomeasure.PNG" max-width="449px" height="auto"></div>
+
+<div style="padding-left: 20px ;"> <p>Both dimension of the sides of triangle measures 13 cm , for the bottom part of the triangle it also measures 13cm 
+
+  For the angle of CE it measures 60 degrees , for the angle of CD it measures 60 degrees, and for the angle of ED is 60 degrees 
+  
+  For the measurement of the sides of the square, for G to A (GA) and H to B (HB) is both 17cm. For G to H (GH) and A to B(AB) is both 18cm
+  </p></div>
+</div> 
+  </div> </div></div>
+
+  <p style="font-weight: bold ;">.....................................................................................................................................................................................................................................................................................................................................................................................................</p>
+
+  <div  id="tagline"></div>
+
+  <img src="taglined.jpg" max-width="1333px" height="auto" style="padding-top: 30px;">
+
+<div>
+
+  <h3>Our Tagline</h3>
+<div style="background-color:white;padding:50px; margin-bottom:25px;">
+ <div style="color:black; text-align:center;padding-bottom: 15px;"> Machineries Offers Amusing Intellect </div>
+
+ <button class="accordion"> Why this?</button>
+
+<div class="panel">
+ <p> We planned to put acronyms in Moai. It is called “Machineries Offers Amusing Intellect”. We really didn’t think much about 
+  the meaning of those words because we just thought about what would 
+  sound good and somehow connected to our content which is gaming.
+   Machineries are like our devices where we play games. These devices offer us amusing games and in those
+    games we can develop our intellect because in some games we need strategic minds. 
+  .</p>
+</div>
+  </div></div>
+  
+</div>
+
+<p style="font-weight: bold ;">.....................................................................................................................................................................................................................................................................................................................................................................................................</p>
+
+<div id="intro"> </div>
+
+<img src="introed.jpg" max-width="1333px" height="auto" style="padding-top: 30px;">
+
+
+
+
+<div class="tabcontent">
+ <h3>Intro Video</h3>
+<div style="background-color:white;padding:50px; margin-bottom:25px;">
+ <iframe width="1200px" height="500px" src="introvid.mp4" title="introvid" 
+ 
+ frameborder="0" allowfullscreen ></iframe>
+  </div>
+  
+  </div>
+
+  <p style="font-weight: bold ;">.....................................................................................................................................................................................................................................................................................................................................................................................................</p>
+
+<div id="about" class="tabcontent">
+
+  <footer style="display: flex; background-color: black; color: white; font-family: 
+  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-bottom: 0%; ">
+
+ 
+<div style="max-width: 300px; padding-left: 40px;  padding-right: 40px;">
+
+<h4>About</h4>
+
+<p>We are group 7 Stoned Faces, this page is dedicated to promote our youtube channel,this
+  page is also for our viewers to know our background, just like the reasons behind our name , logo , and tagline.
+</p>
+
+
+</div>
+
+<div>
+
+  <h4>Our members: </h4>
+  
+  <p>Norelle Burnett</p>
+  <p>Steven Nygel Ng</p>
+  <p>Guiller Logronio</p>
+  <p>Mazekela Del Rosario</p>
+  <p>Rowin Pablico</p>
+
+
+
+
+
+</div>
+  
+</div>
+</footer>
+</div>
+
+
+ 
+ </div> 
+ </div> 
+</div>
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+ </script>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 10 seconds
+      }
+      </script> 
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+  </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+   
+</body>
+</html> 
